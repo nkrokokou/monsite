@@ -5,59 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV - Norbert NKRO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon CV</h1>
-        <p>Découvrez mon parcours professionnel et académique.</p>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <img src="images/profile_picture.jpg" alt="Photo de Norbert NKRO" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+            <h1>Norbert NKRO</h1>
+            <p class="lead">Informaticien / Spécialiste Big Data et IA</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="profil">
-            <h2>Profil</h2>
-            <p>Autonome et enthousiaste, je suis en quête de nouveaux challenges...</p>
-        </section>
-        <section id="competences">
-            <h2>Compétences</h2>
-            <ul>
-                <li>Programmation (HTML, CSS, JavaScript, Python, etc.)</li>
-                <li>Développement mobile avec Flutter</li>
-                <li>Virtualisation de serveurs sous Windows</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Expérience</h2>
-            <article>
-                <h3>Concepteur informatique</h3>
-                <p>Kheir Media | Lomé | Freelance</p>
-                <ul>
-                    <li>Optimisation du code existant...</li>
-                    <li>Participation à des projets de transformation digitale...</li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mon CV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-            </article>
-        </section>
-        <section id="formation">
-            <h2>Formation</h2>
-            <p>Licence en IT - Université Française, Collège de Paris Supérieur</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email : nkro006@gmail.com</p>
-            <p>Téléphone : 70152456 / 70839500</p>
-        </section>
+            </div>
+        </div>
+    </nav>
+    <main class="py-5">
+        <div class="container">
+            <section id="profil" class="mb-5">
+                <h2 class="text-primary">Profil</h2>
+                <p>Autonome et enthousiaste, je suis en quête de nouveaux challenges...</p>
+            </section>
+            <section id="competences" class="mb-5">
+                <h2 class="text-primary">Compétences</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Programmation (HTML, CSS, JavaScript, Python, etc.)</li>
+                    <li class="list-group-item">Développement mobile avec Flutter</li>
+                    <li class="list-group-item">Virtualisation de serveurs sous Windows</li>
+                </ul>
+            </section>
+            <section id="experience" class="mb-5">
+                <h2 class="text-primary">Expérience</h2>
+                <article class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Concepteur informatique</h3>
+                        <p class="card-text">Kheir Media | Lomé | Freelance</p>
+                        <ul>
+                            <li>Optimisation du code existant...</li>
+                            <li>Participation à des projets de transformation digitale...</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="formation" class="mb-5">
+                <h2 class="text-primary">Formation</h2>
+                <p>Licence en IT - Université Française, Collège de Paris Supérieur</p>
+            </section>
+            <section id="contact">
+                <h2 class="text-primary">Contact</h2>
+                <p>Email : nkro006@gmail.com</p>
+                <p>Téléphone : 70152456 / 70839500</p>
+            </section>
+        </div>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Norbert NKRO</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
